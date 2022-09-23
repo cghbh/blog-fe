@@ -17,3 +17,4 @@ FROM nginx
 EXPOSE 80
 # 从名为builder的阶段，复制打包好的文件到/usr/share/nginx/html/
 COPY dist/ /usr/share/nginx/html/
+COPY default.conf /etc/nginx/conf.d/default.conf
